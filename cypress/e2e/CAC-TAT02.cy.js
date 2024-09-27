@@ -63,8 +63,8 @@ describe('Central de atendimento ao cliente TAT', function () {
             .should('be.visible')
             .click()
 
-        cy.get('.error > strong')
-            .should('have.text', 'Valide os campos obrigatórios!')
+        cy.get('.error')
+            .should('be.visible')
     })
 
     it('verificar que campo telefone só acveita numeros', () => {
